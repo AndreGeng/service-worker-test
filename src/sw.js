@@ -5,8 +5,8 @@ this.addEventListener('install', function(event) {
     .open('v1')
     .then(function(cache) {
       return cache.addAll([
-        'service-worker-test/src/style.css',
-        'service-worker-test/src/index.js',
+        '/service-worker-test/src/style.css',
+        '/service-worker-test/src/index.js',
       ]);
     })
   );
