@@ -2,10 +2,9 @@
 // register service worker
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker-test/src/sw.js')
+  navigator.serviceWorker.register('/service-worker-test/sw.js')
     .then(function(reg) {
       console.log('Registration succeeded. Scope is ' + reg.scope);
-      console.log('reg', reg);
       if(reg.installing) {
         console.log('Service worker installing');
       } else if(reg.waiting) {
@@ -18,3 +17,5 @@ if ('serviceWorker' in navigator) {
       console.log('Registration failed with ' + error);
     });
 }
+
+console.log('within index.js v3');
